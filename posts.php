@@ -17,7 +17,7 @@ include('auth.php'); //include auth.php file on all secure pages
             <a href="index.php">Home</a> |
             <a href="how-parents-can-help.html">How Parents Can Help</a> |
             <a href="livestreaming.html">Livestreaming</a> |
-            <a href="contact.html">Contact</a> |
+            <a href="contact.php">Contact</a> |
             <a href="legislation-and-guidance.html">Legislation and Guidance</a> |
             <a href="dashboard.php">Dashboard</a> |
             <a href="viewusers.php">Users</a> |
