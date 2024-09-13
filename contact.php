@@ -35,7 +35,7 @@
             $query = "INSERT into `contact` (name, email, message) VALUES ('$name', '$email', '$message')";
             $result = mysqli_query($con,$query) or die(mysqli_error($con));
             if($result){
-                echo "<div class='form'><h3>You are send your message successfully.</h3><br/>Click here to <a href='index.php'>Home</a></div>";
+                echo "<div class='form'><h3>Your message send successfully.</h3><br/>Click here to <a href='index.php'>Home</a></div>";
             }
         }else{
     ?>
