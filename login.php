@@ -48,9 +48,9 @@
         <p>Become a member of SMC to access exclusive content and resources on online safety.</p>
         <form name="membership" action="" method="post">
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
+            <input type="password" id="password" name="password" required><br><br>
             <button type="submit">Login</button>
 
         </form>
