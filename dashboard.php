@@ -29,7 +29,7 @@ include('auth.php'); //include auth.php file on all secure pages
     <main>
         <h2>Dashboard</h2>
         <p>Welcome <?php echo $_SESSION['email']; ?>! to SMC to access exclusive content and resources on online safety.</p>
-        <p>This is secure area.</p>  Click here to view users<a href="viewusers.php">View Users</a> | <a href="createpost.php">Add Post</a> | <a href="posts.php">View Posts</a>
+        <p>This is secure area.</p>  Click here to view users<a href="viewusers.php">View Users</a> | <a href="createpost.php">Add Post</a> | <a href="posts.php">View Posts</a> | <a href="message.php">View Messages</a>
     </main>
 
     <footer>
