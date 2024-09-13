@@ -46,7 +46,7 @@
     <main>
         <h2>Login</h2>
         <p>Become a member of SMC to access exclusive content and resources on online safety.</p>
-        <form name="membership" action="" method="post">
+        <form name="login" action="" method="post">
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br><br>
             <label for="password">Password:</label><br>
