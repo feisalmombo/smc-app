@@ -1,2 +1,2 @@
-# BANKING APPLICATION
-A Banking Application using Spring Boot, Spring Data JPA (Hibernate), and MySQL would involve building a backend service that manages various banking operations such as account management, transactions, user authentication, and financial services. Other activitie for this applications manages this functionalities based on Creating bank accouunt, Fetching account details and Making a deposit/Withdrawal. 
+# Social Media Campaigns Ltd.
+This is a website for Social Media Campaigns Ltd. (SMC) to help teenagers stay safe online. The website will include multiple interlinked pages, a membership section, and a database for user registration using PHP. This is very useful for beginners to understand how PHP language works.
