@@ -22,26 +22,20 @@
     <?php
         require('db.php');
         // If form submitted, insert values into the database.
-        if (isset($_REQUEST['surname'])){
-            $first_name = stripslashes($_REQUEST['first_name']); // removes backslashes
-            $first_name = mysqli_real_escape_string($con,$first_name); //escapes special characters in a string
-
-            $surname = stripslashes($_REQUEST['surname']); // removes backslashes
-            $surname = mysqli_real_escape_string($con,$surname); //escapes special characters in a string
+        if (isset($_REQUEST['name'])){
+            $name = stripslashes($_REQUEST['name']); // removes backslashes
+            $name = mysqli_real_escape_string($con,$name); //escapes special characters in a string
             
             $email = stripslashes($_REQUEST['email']);
             $email = mysqli_real_escape_string($con,$email);
-
-            $role = stripslashes($_REQUEST['role']);
-            $role = mysqli_real_escape_string($con,$role);
             
-            $password = stripslashes($_REQUEST['password']);
-            $password = mysqli_real_escape_string($con,$password);
+            $message = stripslashes($_REQUEST['message']);
+            $message = mysqli_real_escape_string($con,$message);
             
-            $query = "INSERT into `users` (first_name, surname, email, password, role) VALUES ('$first_name', '$surname', '$email', '".md5($password)."', '$role')";
+            $query = "INSERT into `contact` (name, email, message) VALUES ('$name', '$email', '$message')";
             $result = mysqli_query($con,$query) or die(mysqli_error($con));
             if($result){
-                echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
+                echo "<div class='form'><h3>You are send your message successfully.</h3><br/>Click here to <a href='index.php'>Home</a></div>";
             }
         }else{
     ?>
