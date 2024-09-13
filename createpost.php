@@ -10,7 +10,7 @@
 <header>
         <h1>Social Media Campaigns Ltd.</h1>
         <nav>
-            <a href="index.html">Home</a> |
+            <a href="index.php">Home</a> |
             <a href="how-parents-can-help.html">How Parents Can Help</a> |
             <a href="livestreaming.html">Livestreaming</a> |
             <a href="contact.html">Contact</a> |
