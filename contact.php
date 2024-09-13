@@ -24,7 +24,7 @@
         <p>If you have any questions or need support, please reach out to us:</p>
         <p>Email: support@smc.com</p>
         <p>Phone: +123 456 7890</p>
-        <form action="#" method="post">
+        <form action="contact.php" method="post">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br><br>
             <label for="email">Email:</label><br>
