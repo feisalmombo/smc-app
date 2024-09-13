@@ -1,0 +1,2 @@
+# BANKING APPLICATION
+A Banking Application using Spring Boot, Spring Data JPA (Hibernate), and MySQL would involve building a backend service that manages various banking operations such as account management, transactions, user authentication, and financial services. Other activitie for this applications manages this functionalities based on Creating bank accouunt, Fetching account details and Making a deposit/Withdrawal. 
