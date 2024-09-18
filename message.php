@@ -7,7 +7,7 @@ include('auth.php'); //include auth.php file on all secure pages
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership - SMC</title>
+    <title>View Messages - SMC</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -28,39 +28,32 @@ include('auth.php'); //include auth.php file on all secure pages
     </header>
     
     <main class="container">
-        <h2>Posts</h2>
+        <h2>View Messages</h2>
 
-        <a href="createpost.php">Add post</a>
+        <a href="dashboard.php">Dshboard</a>
         <p>Welcome <?php echo $_SESSION['email']; ?>! To SMC to access exclusive content and resources on online safety.</p>
 
         <table width="100%" border="1" style="border-collapse:collapse;" >
             <thead>
                 <tr>
                 <!-- <th><strong>S.No</strong></th> -->
-                <th><strong>PostID</strong></th>
-                <th><strong>UserID</strong></th>
-                <th><strong>Title</strong></th>
-                <th><strong>Content</strong></th>
-                <th><strong>ImageURL</strong></th>
-                <th><strong>CreatedAt</strong></th>
-                <th><strong>UpdatedAt</strong></th>
+                <th><strong>ID</strong></th>
+                <th><strong>Name</strong></th>
+                <th><strong>Email</strong></th>
+                <th><strong>Message</strong></th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                 $count=1;
-                $sel_query="Select * from posts ORDER BY postID asc;";
+                $sel_query="Select * from contact ORDER BY id asc;";
                 $result = mysqli_query($con,$sel_query) or die(mysqli_error($con));
                 while($row = mysqli_fetch_assoc($result)) { ?>
                 <tr>
-                <!-- <td align="center"><?php echo $count; ?></td> -->
-                <td align="center"><?php echo $row["postID"]; ?></td>
-                <td align="center"><?php echo $row["userID"]; ?></td>
-                <td align="center"><?php echo $row["title"]; ?></td>
-                <td align="center"><?php echo $row["content"]; ?></td>
-                <td align="center"><?php echo $row["imageURL"]; ?></td>
-                <td align="center"><?php echo $row["createdAt"]; ?></td>
-                <td align="center"><?php echo $row["updatedAt"]; ?></td>
+                <td align="center"><?php echo $count; ?></td>
+                <td align="center"><?php echo $row["name"]; ?></td>
+                <td align="center"><?php echo $row["email"]; ?></td>
+                <td align="center"><?php echo $row["message"]; ?></td>
                 </tr>
                 <?php $count++; } ?>
             </tbody>
